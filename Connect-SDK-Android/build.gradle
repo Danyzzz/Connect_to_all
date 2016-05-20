@@ -25,12 +25,6 @@ android {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE'
     }
-    
-    productFlavors {
-        "nsws" {
-            dimension "nsws"
-        }
-    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -63,6 +57,12 @@ android {
     android {
         lintOptions {
             abortOnError false
+        }
+        
+        productFlavors {
+            "nsws" {
+                dimension "nsws"
+            }
         }
     }
 }
